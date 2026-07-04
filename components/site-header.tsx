@@ -9,14 +9,14 @@ export function SiteHeader() {
       <div className="container mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 font-semibold">
           <LayoutGrid className="size-5" />
-          Modern App Starter Kit
+          모던 앱 스타터 키트
         </Link>
         <nav className="flex items-center gap-4">
           <Link
             href="/showcase"
             className="text-sm text-muted-foreground transition-colors hover:text-foreground"
           >
-            Showcase
+            쇼케이스
           </Link>
           <ModeToggle />
         </nav>

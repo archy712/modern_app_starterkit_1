@@ -18,9 +18,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Modern App Starter Kit",
+  title: "모던 앱 스타터 키트",
   description:
-    "Next.js, TypeScript, Tailwind CSS v4, shadcn/ui starter kit with dark mode and a component showcase.",
+    "다크 모드와 컴포넌트 쇼케이스를 갖춘 Next.js, TypeScript, Tailwind CSS v4, shadcn/ui 스타터 키트입니다.",
 };
 
 export default function RootLayout({
@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="ko"
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full scroll-smooth antialiased`}
     >

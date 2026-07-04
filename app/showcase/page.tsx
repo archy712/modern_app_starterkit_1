@@ -9,7 +9,7 @@ import { ShowcaseNav } from "@/components/showcase/showcase-nav";
 import { ShowcaseSection } from "@/components/showcase/showcase-section";
 
 export const metadata: Metadata = {
-  title: "Component Showcase",
+  title: "컴포넌트 쇼케이스",
 };
 
 export default function ShowcasePage() {
@@ -17,11 +17,11 @@ export default function ShowcasePage() {
     <div className="container mx-auto max-w-6xl px-4">
       <div className="space-y-2 py-10">
         <h1 className="text-3xl font-bold tracking-tight">
-          Component Showcase
+          컴포넌트 쇼케이스
         </h1>
         <p className="text-muted-foreground">
-          A live gallery of every shadcn/ui component included in this
-          starter kit.
+          이 스타터 키트에 포함된 모든 shadcn/ui 컴포넌트를 확인할 수 있는
+          실시간 갤러리입니다.
         </p>
       </div>
 
@@ -29,40 +29,40 @@ export default function ShowcasePage() {
 
       <ShowcaseSection
         id="forms"
-        title="Forms"
-        description="Inputs, selection controls, and form primitives."
+        title="폼"
+        description="입력창, 선택 컨트롤 등 폼 관련 기본 요소입니다."
       >
         <FormsDemo />
       </ShowcaseSection>
 
       <ShowcaseSection
         id="overlays"
-        title="Overlays"
-        description="Dialogs, menus, and floating UI."
+        title="오버레이"
+        description="다이얼로그, 메뉴 등 플로팅 UI입니다."
       >
         <OverlaysDemo />
       </ShowcaseSection>
 
       <ShowcaseSection
         id="feedback"
-        title="Feedback"
-        description="Alerts, progress, and status indicators."
+        title="피드백"
+        description="알림, 진행 표시줄 등 상태 표시 요소입니다."
       >
         <FeedbackDemo />
       </ShowcaseSection>
 
       <ShowcaseSection
         id="layout"
-        title="Layout"
-        description="Structural and content-grouping components."
+        title="레이아웃"
+        description="구조 및 콘텐츠 그룹화를 위한 컴포넌트입니다."
       >
         <LayoutDemo />
       </ShowcaseSection>
 
       <ShowcaseSection
         id="data-display"
-        title="Data Display"
-        description="Tables, badges, and avatars."
+        title="데이터 표시"
+        description="테이블, 배지, 아바타 등입니다."
       >
         <DataDisplayDemo />
       </ShowcaseSection>

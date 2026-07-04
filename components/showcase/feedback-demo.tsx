@@ -13,30 +13,30 @@ import { ComponentPreview } from "./component-preview";
 export function FeedbackDemo() {
   return (
     <>
-      <ComponentPreview title="Alert" description="Default and destructive variants.">
+      <ComponentPreview title="얼럿" description="기본 및 위험 변형입니다.">
         <div className="grid w-full gap-3">
           <Alert>
             <Terminal />
-            <AlertTitle>Heads up!</AlertTitle>
+            <AlertTitle>알림!</AlertTitle>
             <AlertDescription>
-              You can add components to your app using the CLI.
+              CLI를 사용해 앱에 컴포넌트를 추가할 수 있습니다.
             </AlertDescription>
           </Alert>
           <Alert variant="destructive">
             <AlertCircle />
-            <AlertTitle>Error</AlertTitle>
+            <AlertTitle>오류</AlertTitle>
             <AlertDescription>
-              Your session has expired. Please sign in again.
+              세션이 만료되었습니다. 다시 로그인해 주세요.
             </AlertDescription>
           </Alert>
         </div>
       </ComponentPreview>
 
-      <ComponentPreview title="Progress" description="Shows completion progress.">
+      <ComponentPreview title="프로그레스" description="완료 진행률을 표시합니다.">
         <Progress value={66} className="max-w-xs" />
       </ComponentPreview>
 
-      <ComponentPreview title="Skeleton" description="Loading placeholder.">
+      <ComponentPreview title="스켈레톤" description="로딩 placeholder입니다.">
         <div className="flex items-center gap-4">
           <Skeleton className="size-10 rounded-full" />
           <div className="grid gap-2">
@@ -46,16 +46,16 @@ export function FeedbackDemo() {
         </div>
       </ComponentPreview>
 
-      <ComponentPreview title="Sonner" description="Toast notifications.">
+      <ComponentPreview title="소너" description="토스트 알림입니다.">
         <Button
           variant="outline"
           onClick={() =>
-            toast.success("Event created", {
-              description: "Sunday, July 4th at 4:00 PM",
+            toast.success("이벤트 생성됨", {
+              description: "7월 4일 일요일 오후 4시",
             })
           }
         >
-          Show toast
+          토스트 표시
         </Button>
       </ComponentPreview>
     </>

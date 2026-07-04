@@ -1,9 +1,9 @@
 const sections = [
-  { id: "forms", label: "Forms" },
-  { id: "overlays", label: "Overlays" },
-  { id: "feedback", label: "Feedback" },
-  { id: "layout", label: "Layout" },
-  { id: "data-display", label: "Data Display" },
+  { id: "forms", label: "폼" },
+  { id: "overlays", label: "오버레이" },
+  { id: "feedback", label: "피드백" },
+  { id: "layout", label: "레이아웃" },
+  { id: "data-display", label: "데이터 표시" },
 ];
 
 export function ShowcaseNav() {

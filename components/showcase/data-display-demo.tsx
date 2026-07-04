@@ -13,24 +13,24 @@ import {
 import { ComponentPreview } from "./component-preview";
 
 const invoices = [
-  { invoice: "INV001", status: "Paid", amount: "$250.00" },
-  { invoice: "INV002", status: "Pending", amount: "$150.00" },
-  { invoice: "INV003", status: "Unpaid", amount: "$350.00" },
+  { invoice: "INV001", status: "결제완료", amount: "$250.00" },
+  { invoice: "INV002", status: "대기중", amount: "$150.00" },
+  { invoice: "INV003", status: "미결제", amount: "$350.00" },
 ];
 
 export function DataDisplayDemo() {
   return (
     <>
-      <ComponentPreview title="Badge" description="Status labels and tags.">
+      <ComponentPreview title="배지" description="상태 라벨 및 태그입니다.">
         <div className="flex flex-wrap gap-2">
-          <Badge>Default</Badge>
-          <Badge variant="secondary">Secondary</Badge>
-          <Badge variant="outline">Outline</Badge>
-          <Badge variant="destructive">Destructive</Badge>
+          <Badge>기본</Badge>
+          <Badge variant="secondary">보조</Badge>
+          <Badge variant="outline">아웃라인</Badge>
+          <Badge variant="destructive">위험</Badge>
         </div>
       </ComponentPreview>
 
-      <ComponentPreview title="Avatar" description="Image with a text fallback.">
+      <ComponentPreview title="아바타" description="이미지와 텍스트 대체 표시입니다.">
         <div className="flex items-center gap-3">
           <Avatar>
             <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
@@ -43,17 +43,17 @@ export function DataDisplayDemo() {
       </ComponentPreview>
 
       <ComponentPreview
-        title="Table"
-        description="Tabular data display."
+        title="테이블"
+        description="표 형태의 데이터 표시입니다."
         className="items-start"
       >
         <Table>
-          <TableCaption>A list of recent invoices.</TableCaption>
+          <TableCaption>최근 인보이스 목록입니다.</TableCaption>
           <TableHeader>
             <TableRow>
-              <TableHead>Invoice</TableHead>
-              <TableHead>Status</TableHead>
-              <TableHead className="text-right">Amount</TableHead>
+              <TableHead>인보이스</TableHead>
+              <TableHead>상태</TableHead>
+              <TableHead className="text-right">금액</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
